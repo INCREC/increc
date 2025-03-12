@@ -3323,10 +3323,39 @@ input, select, textarea {
 
 			#nav {
 				display: inline-block;
+				width: calc(100% + 4em);
 			}
 
 				#nav + #main {
-					padding-top: 0;
+					padding-top: 4.25em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#nav {
+				display: inline-block;
+				width: 100vw;
+        		max-width: calc(100% - 2em);
+			}
+
+				#nav + #main {
+					padding-top: 5.75em;
+				}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			#nav {
+				display: inline-block;
+				width: 100vw;
+				max-width: 100vw;
+			}
+
+				#nav + #main {
+					padding-top: 6.25em;
 				}
 
 		}
