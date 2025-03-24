@@ -3072,7 +3072,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 1em 5em 1em 5em ;
+		padding: 1em 5em 0em 5em ;
 		text-align: center;
 	}
 
@@ -3086,7 +3086,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 1em 5em 1em 5em ;
+			padding: 1em 5em 0em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3258,7 +3258,7 @@ input, select, textarea {
 		}
 
 		#nav + #main {
-			padding-top: 2.25em;
+			padding-top: 5.25em;
 		}
 
 		#nav ul {
@@ -3610,7 +3610,7 @@ input, select, textarea {
 		}
 
 		#main > .main {
-			padding: 5em 5em 3em 5em ;
+			padding: 1em 5em 1em 5em ;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3719,7 +3719,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
+		padding: 3em 5em 3em 5em ;
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
 	}
