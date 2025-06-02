@@ -3812,3 +3812,11 @@ input, select, textarea {
 			}
 
 		}
+
+  .ruglogo {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: -1; /* Achter andere elementen */
+	max-height: 50px; /* Maximale hoogte */
+  }
