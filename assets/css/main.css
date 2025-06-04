@@ -3372,6 +3372,10 @@ input, select, textarea {
 			color: #636363;
 		}
 
+		#main a {
+			color: #0077cc;
+		}
+
 		#main a:hover {
 			color: #636363;
 		}
@@ -3812,11 +3816,3 @@ input, select, textarea {
 			}
 
 		}
-
-  .ruglogo {
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    z-index: -1; /* Achter andere elementen */
-	max-height: 50px; /* Maximale hoogte */
-  }
