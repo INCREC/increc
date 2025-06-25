@@ -3072,8 +3072,14 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 1em 5em 0em 5em ;
+		padding: 1em 5em 0.1em 5em ;
 		text-align: center;
+		background-image: url('images/banner.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		color: white; 
 	}
 
 		#header h1 {
@@ -3086,7 +3092,13 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 1em 5em 0em 5em ;
+			padding: 1em 5em 0.1em 5em ;
+			background-image: url('images/banner.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			color: white;
 		}
 
 			#header.alt h1 {
@@ -3222,8 +3234,6 @@ input, select, textarea {
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
-		border-top-left-radius: 0.25em;
-		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
 	}
