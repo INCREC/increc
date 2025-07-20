@@ -3091,6 +3091,22 @@ input, select, textarea {
 			letter-spacing: -0.025em;
 		}
 
+		#header::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4); 
+			z-index: 0;
+		}
+
+		#header > * {
+			position: relative;
+			z-index: 1;
+		}
+
 		#header.alt {
 			padding: 1em 5em 0.1em 5em ;
 			background-image: url('images/banner.jpg');
@@ -3105,6 +3121,17 @@ input, select, textarea {
 				font-size: 3.25em;
 			}
 
+			#header.alt::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.4);
+				z-index: 0;
+			}
+
 			#header.alt > * {
 				-moz-transition: opacity 3s ease;
 				-webkit-transition: opacity 3s ease;
@@ -3115,6 +3142,8 @@ input, select, textarea {
 				-ms-transition-delay: 0.5s;
 				transition-delay: 0.5s;
 				opacity: 1;
+				position: relative;
+				z-index: 1;
 			}
 
 			#header.alt .logo {
@@ -3218,6 +3247,38 @@ input, select, textarea {
 			-webkit-transform: scale(0.8) rotate(-30deg);
 			-ms-transform: scale(0.8) rotate(-30deg);
 			transform: scale(0.8) rotate(-30deg);
+		}
+
+		#header .corner-logo {
+    		position: absolute;
+    		bottom: 1em;
+    		right: 1em;
+    		width: 200px;
+    		height: auto;
+    		z-index: 2;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#header .corner-logo  {
+				display: none;
+			}
+		}
+
+		#header.alt .corner-logo {
+    		position: absolute;
+    		bottom: 1em;
+    		right: 1em;
+    		width: 200px;
+    		height: auto;
+    		z-index: 2;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#header.alt .corner-logo  {
+				display: none;
+			}
 		}
 
 /* Nav */
